@@ -1,25 +1,13 @@
-//wap to print array using int pointer
-//
-
 #include<stdio.h>
 int main()
 {
-
-int ele,i;
-printf("enter the number of elements:\n");
-scanf("%d",&ele);
-int a[ele];
-printf("enter the elements:\n");
-for(i=0;i<ele;i++)
-	scanf("%d",&a[i]);
-
-int *p;
+int a[5]={10,20,30,40,50};
+int *p,i;
 p=a;
-
-printf("-----------------\n");
-
-for(i=0;i<ele;i++)
-printf("%d ",*(p+i));
+for(i=0;i<5;i++)
+{//	printf("%d ",*p++);
+printf("%d %d \n",p[i],*(p+i));
+}
 
 return 0;
 }
