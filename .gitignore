@@ -6,7 +6,7 @@
 
 # Track all C source files
 !**/*.c
-
+!**/*.h
 # Track this file
 !.gitignore
 
